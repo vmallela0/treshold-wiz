@@ -32,7 +32,7 @@ labelTest = tk.Label(text="", font=('Helvetica', 12), fg='red')
 labelTest.pack(side="top")
 
 def close_window():
-    print(variable.get())
+    # print(variable.get())
     clrspace.append(variable.get())
     time.sleep(1)
     app.destroy()
@@ -47,7 +47,7 @@ variable.trace("w", callback)
 
 app.mainloop()
 
-print(clrspace) # 0 = hsv, 1 = lab, 2 = cmyk, 3 = rgb
+# print(clrspace) # 0 = hsv, 1 = lab, 2 = cmyk, 3 = rgb
 MODE = clrspace[0]
 
 # threshold settings
